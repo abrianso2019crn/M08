@@ -1,0 +1,81 @@
+body{
+  background-color: #151515;
+  background-image: url("1.jpg");
+}
+#header{
+  text-align: center;
+  text-decoration: none;
+  height: 50px;
+  background-color: orange;
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+}
+#principal{
+  float:left;
+  width: 65%;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+#imgprincipal{
+  height: 300px;
+}
+#imgprincipal2{
+  height: 270px;
+}
+#imgprincipal3{
+  height: 270px;
+  width: 340px;
+}
+#imgprincipal4{
+  height: 300px;
+  width: 340px;
+}
+#imgprincipal5{
+  height: 247px;
+}
+#lateral{
+  float:right;
+  width: 25%;
+  color: white;
+  text-decoration: none;
+}
+.a link{
+  color: white;
+}
+.num{
+  background-color: rgba(255, 160, 50, 0.5);
+  width: 30%;
+  height: 420px;
+  float:left;
+  margin:1%;
+  padding: 5px;
+  border: solid white 2px;
+  text-decoration: none;
+}
+.lat{
+  background-color: rgba(255, 160, 90, 0.5);
+  height: 120px;
+  margin: 1%;
+  padding: 10px;
+  border: solid red 2px;
+  text-decoration: none;
+}
+#peu{
+  background-color: rgba(255, 0, 0, 0.5);
+  clear:both;
+  text-align: center;
+  padding: 5px;
+  margin-top: 600px;
+  text-decoration: none;
+
+}
+#imgpeu{
+  height: 600px;
+  width: 900px;
+}
+#imgpeu2{
+  height: 600px;
+  width: 900px;
+}
