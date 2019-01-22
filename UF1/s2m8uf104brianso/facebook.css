@@ -38,11 +38,11 @@ body{
  position: absolute;
  background-image: url(img/photo.png);
  top: 178px;
- left: 550px;
+ left: 375px;
 }
 
 #vacio{
- height: 64px;
+ height: 44px;
  background-color: white;
  width: 850px;
  margin-top: 358px;
@@ -56,14 +56,17 @@ body{
  height: 43px;
  padding: 0;
  margin: 0;
- height: 43px;
  width: auto;
 }
 
-#menu li{
-  margin-top: 82px;
-  box-shadow: 1px 0 1px #DDD;
+#menu h2{
+  margin-left: 40px;
+}
 
+#menu li{
+  height: 12px;
+  margin-top: 112px;
+  box-shadow: 1px 0 1px #DDD;
 }
 
 #contingut #cap h2{
@@ -88,6 +91,8 @@ li{
 
 #principal{
  overflow: hidden;
+ width: 350px;
+ background-color: pink;
 }
 
 #esquerra {
@@ -99,14 +104,23 @@ li{
  margin-top: 56px;
 }
 
+#dreta{
+  background-color: white;
+  border-radius: 3px;
+  border: solid 1px #DDD;
+  height: 100px;
+  width: 522px;
+  margin-top: 56px;
+}
+
 #presentacio{
   height: 354px;
-  margin-top: 70px;
+  margin-top: 50px;
   float: left;
-  background-color: green;
+  background-color: white;
   width: 100%;
-  color: white;
-  text-align: left;
+  color: black;
+  text-align: center;
   padding-left: 15px;
   text-decoration: none;
   overflow: hidden;
@@ -116,22 +130,37 @@ li{
   height: 354px;
   margin-top: 20px;
   float: left;
-  background-color: pink;
+  background-color: white;
   width: 100%;
   color: black;
   text-align: left;
+  padding-left: 15px;
   text-decoration: none;
-  overflow: auto;
+  overflow: hidden;
 }
 
 #fotos{
   height: 354px;
   margin-top: 20px;
   float: left;
-  background-color: cyan;
+  background-color: white;
   width: 100%;
   color: black;
   text-align: left;
+  padding-left: 15px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#surprise{
+  height: 354px;
+  margin-top: 20px;
+  float: left;
+  background-color: white;
+  width: 90%;
+  color: black;
+  text-align: center;
+  padding-left: 15px;
   text-decoration: none;
   overflow: hidden;
 }
@@ -143,7 +172,12 @@ li{
 }
 
 .esquerra{
-
+   background-color: white;
+   border-radius: 3px;
+   border: solid 1px #DDD;
+   height: 200px;
+   width: 322px;
+   margin-top: 56px;
 }
 
 .dreta{
@@ -169,10 +203,15 @@ li{
   background-position: 0 -24px;
   text-indent: 26px;
   height: 24px;
+  text-align: left;
 }
 
 #presentacio h3{
   background-position: 0 0;
+}
+
+#presentacio li{
+  top: 2px;
 }
 
 #presentacio p{
@@ -180,8 +219,86 @@ li{
   border-bottom: solid 1px #DDD;
 }
 
+#presentacio .estudis{
+  list-style-image: url(img/icones_estudis.png);
+}
+
+#presentacio .domicili{
+  list-style-image: url(img/icones_domicili.png);
+}
+
+#presentacio .feina{
+  list-style-image: url(img/icones_feina.png);
+}
+
+#presentacio .neixement{
+  list-style-image: url(img/icones_ubicació.png);
+}
+
 #amistats h3{
   background-position: 0 -48;
+}
+
+#amistats li{
+  width: 90px;
+  height: 90px;
+  margin: 2px;
+  background-color: yellow;
+  padding: 1px;
+  float:left;
+  background-size: 100%;
+}
+
+#AC{
+  background-image: url("http://acarranco2019crn.github.io/m08/s2m8uf0104carranco/img/profile.jpg");
+}
+
+#GB{
+  background-image: url("https://gbonsoms2019crn.github.io/M08/s2m8uf104_facebook/img/pajaro.jpg");
+}
+
+#SG{
+  background-image: url("https://sgarzon2019crn.github.io/M08/s2m8uf104_facebook/img/perfil.jpg");
+}
+
+#NC{
+  background-image: url("https://nchia2019crn.github.io/M08/s2m8uf104_chia/img/perfil.jpg");
+}
+
+#SP{
+  background-image: url("https://sperez2019crn.github.io/M08/s2m8uf104_sperez/img/fotoperfil.jpg");
+}
+
+#AD{
+  background-image: url("https://adositey2019crn.github.io/M08/UF1/s2m8uf104_facebook/img/photo.png");
+}
+
+#MM{
+  background-image: url("https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg");
+}
+
+#SM{
+  background-image: url("https://smarcer2019crn.github.io/M08/s2m8uf104_marcer/img/perfil_yo.jpg");
+}
+
+#VH{
+  background-image: url("https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png");
+}
+
+#amistats a:link{
+  color:white;
+  text-decoration: none;
+}
+
+#amistats a:visited{
+  color:white;
+  text-decoration: none;
+}
+
+#amistats ul{
+padding: 2px;
+background-color: pink;
+overflow: hidden;
 }
 
 #surprise h3{
