@@ -1,0 +1,369 @@
+body{
+ margin: 0;
+ padding: 0;
+ background-color: #222;
+ font-family: 'Helvetica', Sans-serif;
+}
+
+#barra{
+ height: 50px;
+ background-color: rgba(0, 0, 0, 1);
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+ display: inline;
+}
+
+#logo{
+  height: 40px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+#barra li{
+  display: inline;
+  margin-top: 300px;
+  color: #CCC;
+  padding: 5px;
+}
+
+#barra li:hover{
+  color: #FFF;
+  text-decoration: underline;
+}
+
+#contingut{
+  float: left;
+ height: 4000px;
+ margin: 0 auto;
+ overflow: hidden;
+}
+
+/*documentals*/
+#principal{
+  margin-top: 80px;
+  float: left;
+  color: white;
+}
+
+.num{
+  background-color: white;
+  width: 175px;
+  height: 260px;
+  border-radius: 5px;
+  margin: 20px;
+  float:left;
+}
+
+#doc1{
+  background-image: url(img/1982Koyaanisqatsi.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#doc2{
+  background-image: url(img/2004YTuQueSabes.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#doc3{
+  background-image: url(img/2005Earthlings.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#doc4{
+  background-image: url(img/2007Helvetica.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#doc5{
+  background-image: url(img/2007Sicko.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#doc6{
+  background-image: url(img/2008Zeitgeist2.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#doc7{
+  background-image: url(img/2009ArtAndCopy.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#doc8{
+  background-image: url(img/2009Home.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#doc9{
+  background-image: url(img/2009RipARemixManifesto.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#doc10{
+  background-image: url(img/2010ComprarTirarComprar.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#doc11{
+  background-image: url(img/2010InsideJob.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#doc1:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#doc2:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#doc3:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#doc4:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#doc5:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#doc6:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#doc7:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#doc8:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#doc9:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#doc10:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#doc11:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#principal2{
+  margin-top: 80px;
+  float: left;
+  color: white;
+}
+
+#docv1{
+  -webkit-filter:grayscale(100%);
+  background-image: url(img/2011LaDoctrinaDeShock.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#docv2{
+  -webkit-filter:grayscale(100%);
+  background-image: url(img/2012SearchingForSugarMan.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#docv3{
+  -webkit-filter:grayscale(100%);
+  background-image: url(img/2012TheActOfKilling.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#docv4{
+  -webkit-filter:grayscale(100%);
+  background-image: url(img/2013ElEspirituDel45.jpg);
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#docv1:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#docv2:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#docv3:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#docv4:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/*pelis*/
+#principal3{
+  margin-top: 80px;
+  float: left;
+  color: white;
+}
+
+#peli1{
+  background-color: red;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#peli2{
+  background-color: red;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#peli1:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#peli2:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#principal4{
+  margin-top: 50px;
+  float: left;
+  color: white;
+}
+
+#peliv1{
+  -webkit-filter:grayscale(100%);
+  background-color: red;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#peliv2{
+  -webkit-filter:grayscale(100%);
+  background-color: red;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#peliv1:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#peliv2:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/*series*/
+#principal5{
+  margin-top: 50px;
+  float: left;
+  color: white;
+}
+
+#serie1{
+  background-color: yellow;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#serie2{
+  background-color: yellow;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#serie1:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#serie2:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#principal6{
+  margin-top: 50px;
+  float: left;
+  color: white;
+}
+
+#seriev1{
+  filter:grayscale(100%);
+  background-color: yellow;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#seriev2{
+  filter:grayscale(100%);
+  background-color: yellow;
+  opacity: 1.0;
+  filter: alpha(opacity=100);
+}
+
+#seriev1:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+#seriev2:hover{
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+/*-------*/
+
+#opcions a:link{
+  color:#CCC;
+  text-decoration: none;
+}
+
+#opcions a:visited{
+  color:#CCC;
+  text-decoration: none;
+}
+
+/*text*/
+p{
+  margin-top: 260px;
+  color: #CCC;
+  font-size: 14pt;
+}
