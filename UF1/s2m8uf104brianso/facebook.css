@@ -31,6 +31,7 @@ body{
  border:solid 1px #DDD;
  border-radius: 3px;
  margin-top: -350px;
+ color: white;
 }
 
 
@@ -124,7 +125,7 @@ li{
   font-size: 16px;
   padding-left: 15px;
   text-decoration: none;
-  overflow: hidden;
+  overflow: scroll;
 }
 
 #amistats{
@@ -230,7 +231,6 @@ li{
   margin-top: 12px;
   padding: 12px;
   box-shadow: 1 1 1 #D3D3D3;
-
 }
 
 #seccions h3{
@@ -250,6 +250,7 @@ li{
   top: 2px;
   display: block;
   text-align: left;
+
 }
 
 #presentacio p{
@@ -433,7 +434,7 @@ overflow: hidden;
 }
 
 #crear{
-  height: 38px;
+  height: 37px;
   width: 516px;
   background-color: rgba(235, 235, 235, 0.8);
   box-shadow: 1 1 1 #D3D3D3;
@@ -455,13 +456,13 @@ overflow: hidden;
 }
 
 #crear li{
-list-style: none;
-height: 38px;
-margin: 0 0 0 1px;
-padding: 0 10px;
-font-size: 8pt;
-line-height: 48px;
-float: left;
+  list-style: none;
+  height: 38px;
+  margin: 0 0 0 1px;
+  padding: 0 10px;
+  font-size: 8pt;
+  line-height: 48px;
+  float: left;
 }
 
 #pensament{
@@ -487,5 +488,51 @@ float: left;
   margin: 0 0 0 1px;
   padding: 0 10px;
   font-size: 8pt;
-  background-color: rgba(15, 255, 255, 0.2);
+  background-color: #F5F5F7;
+  border-radius: 13px;
+  text-indent: 24px;
+}
+
+#estat_fotovideo{
+  background-image: url(img/fotovideo.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+
+}
+
+#estat_etiquetar{
+  background-image: url(img/etiquetar.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+}
+
+#estat_sentimiento{
+  background-image: url(img/sentiment.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+}
+
+#publica{
+  background-image: url(img/publica.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+
+}
+
+#publica_foto{
+  background-image: url(img/pfoto.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+}
+
+#publica_video{
+  background-image: url(img/pvideo.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+}
+
+#publica_aconteixement{
+  background-image: url(img/pacon.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
 }
