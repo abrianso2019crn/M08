@@ -545,7 +545,7 @@ overflow: hidden;
 
 /* Versió Mòbils */
 
-@media only screen and (max-width: 959){
+@media only screen and (max-width: 959px){
 
   body{
    margin: 0;
@@ -568,6 +568,7 @@ overflow: hidden;
     background-repeat: no-repeat;
     background-size: 100% auto;
     text-align: center;
+    margin-top: -366px;
   }
 
   #fotoperfil{
@@ -583,7 +584,7 @@ overflow: hidden;
   }
 
   #contingut #menu{
-    background-color: red;
+
   }
 
   #menu h2{
@@ -677,7 +678,6 @@ overflow: hidden;
 
   #presentacio li{
     list-style: none;
-    background-color: green;
     width: 60%;
   }
 
