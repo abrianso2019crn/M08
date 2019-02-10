@@ -1,0 +1,938 @@
+/* Versió Escriptori */
+
+@media only screen and (min-width: 960px){
+
+body{
+ margin: 0;
+ padding: 0;
+ background-color: #e9ebed;
+ font-family: 'Lucida Grande', Tahoma, Segoe UI, San Francisco, Roboto;
+}
+
+#barra{
+ height: 43px;
+ background-color: #5066ae;
+ position: fixed;
+ top: 0;
+ left: 0;
+ right: 0;
+}
+
+#contingut{
+ height: 2000px;
+ width: 852px;
+ margin: 0 auto;
+ overflow: hidden;
+}
+
+#contingut #cap{
+ height: 358px;
+ position: static;
+ background-color: black;
+ background-image: url(img/backg.jpg);
+ box-shadow: 0px 0px 1px grey;
+ margin-bottom: 12px;
+ border:solid 1px #DDD;
+ border-radius: 3px;
+ margin-top: -350px;
+ color: #162281;
+}
+
+
+#fotoperfil{
+ height: 169px;
+ width: 169px;
+ position: static;
+ margin-left: 30px;
+ margin-top: 200px
+}
+
+#vacio{
+ height: 44px;
+ background-color: white;
+ width: 850px;
+ margin-top: 358px;
+ position:relative;
+}
+
+#contingut #menu{
+ float: right;
+ position: relative;
+ top: -201px;
+ height: 43px;
+ padding: 0;
+ margin: 0;
+ width: auto;
+}
+
+#menu h2{
+  margin-left: 40px;
+}
+
+#menu li{
+  height: 12px;
+  margin-top: 112px;
+  box-shadow: 1px 0 1px #DDD;
+}
+
+#contingut #cap h2{
+ position: relative;
+ top: 30px;
+ left: -85px;
+ color: white;
+ font-family: sans-serif;
+ font-size: 20px;
+}
+
+li{
+ margin: 0 0 0 1px;
+ float: left;
+ list-style-type: none;
+ background-color: white;
+ display: block;
+ height: 43px;
+ padding: 0px 15px;
+ margin-top: 102px;
+}
+
+#principal{
+ overflow: hidden;
+ width: 350px;
+}
+
+#esquerra {
+ background-color: white;
+ border-radius: 3px;
+ border: solid 1px #DDD;
+ height: 200px;
+ width: 322px;
+ margin-top: 56px;
+}
+
+#dreta{
+  background-color: white;
+  border-radius: 3px;
+  border: solid 1px #DDD;
+  height: 100px;
+  width: 522px;
+  margin-top: 56px;
+}
+
+#presentacio{
+  height: 354px;
+  margin-top: 0px;
+  float: left;
+  background-color: white;
+  width: 330px;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  padding-left: 15px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#amistats{
+  height: 364px;
+  margin-top: 20px;
+  float: left;
+  background-color: white;
+  width: 100%;
+  color: black;
+  text-align: left;
+  padding-left: 15px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#fotos{
+  height: 364px;
+  margin-top: 20px;
+  float: left;
+  background-color: white;
+  width: 100%;
+  color: black;
+  text-align: left;
+  padding-left: 15px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#sabias{
+  height: 354px;
+  margin-top: 20px;
+  float: left;
+  background-color: white;
+  width: 100%;
+  color: black;
+  text-align: center;
+  padding-left: 15px;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+#feed{
+  height: 180px;
+  width: 510px;
+  margin-right: 0px;
+  background-color: white;
+  margin-top: -1603px;
+}
+
+#feed2{
+  height: 180px;
+  width: 510px;
+  margin-right: 0px;
+  background-color: white;
+  margin-top: -1403px;
+}
+
+#feed3{
+  height: 180px;
+  width: 510px;
+  margin-right: 0px;
+  background-color: white;
+  margin-top: -1203px;
+}
+
+#feed4{
+  height: 180px;
+  width: 510px;
+  margin-right: 0px;
+  background-color: white;
+  margin-top: -1003px;
+}
+
+#feed5{
+  height: 180px;
+  width: 510px;
+  margin-right: 0px;
+  background-color: white;
+  margin-top: -803px;
+}
+
+#seccions{
+  width: 322px;
+  float: left;
+  overflow: hidden;
+}
+
+.esquerra{
+}
+
+.dreta{
+  width: 492px;
+  float: right;
+  clear: right;
+}
+
+.esquerra .dreta{
+  overflow: hidden;
+  font-size: 12px;
+  background-color: white;
+  border-radius: 3px;
+  border: solid 1px #000;
+  margin-top: 12px;
+  padding: 12px;
+  box-shadow: 1 1 1 #D3D3D3;
+}
+
+#seccions h3{
+  background-image: url(img/lateral.png);
+  background-repeat: no-repeat;
+  background-position: 0 -24px;
+  text-indent: 26px;
+  height: 24px;
+  text-align: left;
+}
+
+#presentacio h3{
+  background-position: 0 0;
+}
+
+#presentacio li{
+  margin-top: 25px;
+  top: 2px;
+  display: block;
+  text-align: left;
+  height: 50px;
+}
+
+#presentacio p{
+  padding-bottom: 12px;
+  border-bottom: solid 1px #DDD;
+  width: 90%;
+  font-family: papyrus;
+}
+
+#presentacio .estudis{
+  list-style-image: url(img/icones_estudis.png);
+}
+
+#presentacio .domicili{
+  list-style-image: url(img/icones_domicili.png);
+}
+
+#presentacio .feina{
+  list-style-image: url(img/icones_feina.png);
+}
+
+#presentacio .neixement{
+  list-style-image: url(img/icones_ubicació.png);
+}
+
+#amistats h3{
+  background-position: 0 -48;
+}
+
+#amistats li{
+  width: 90px;
+  height: 90px;
+  margin: 2px;
+  background-color: white;
+  padding: 1px;
+  float:left;
+  background-size: 100%;
+  text-align: left;
+}
+
+#AC{
+  background-image: url("http://acarranco2019crn.github.io/m08/s2m8uf0104carranco/img/profile.jpg");
+}
+
+#GB{
+  background-image: url("https://gbonsoms2019crn.github.io/M08/s2m8uf104_facebook/img/pajaro.jpg");
+}
+
+#SG{
+  background-image: url("https://sgarzon2019crn.github.io/M08/s2m8uf104_facebook/img/perfil.jpg");
+}
+
+#NC{
+  background-image: url("https://nchia2019crn.github.io/M08/s2m8uf104_chia/img/perfil.jpg");
+}
+
+#SP{
+  background-image: url("https://sperez2019crn.github.io/M08/s2m8uf104_sperez/img/fotoperfil.jpg");
+}
+
+#AD{
+  background-image: url("https://adositey2019crn.github.io/M08/UF1/s2m8uf104_facebook/img/photo.png");
+}
+
+#MM{
+  background-image: url("https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg");
+}
+
+#SM{
+  background-image: url("https://smarcer2019crn.github.io/M08/s2m8uf104_marcer/img/perfil_yo.jpg");
+}
+
+#VH{
+  background-image: url("https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png");
+}
+
+#amistats a:link{
+  color:white;
+  text-decoration: none;
+}
+
+#amistats a:visited{
+  color:white;
+  text-decoration: none;
+}
+
+#amistats ul{
+padding: 2px;
+background-color: white;
+overflow: hidden;
+}
+
+#fotos h3{
+  background-position: 0 -48;
+}
+
+#fotos li{
+  width: 90px;
+  height: 90px;
+  margin: 2px;
+  background-color: yellow;
+  padding: 1px;
+  float:left;
+  background-size: 100%;
+}
+
+#foto1{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMqVcku8W3FBFKzXS46kibJFcJ44JLplALE6dG40BbTgNj_OoSag");
+}
+
+#foto2{
+  background-image: url("https://vignette.wikia.nocookie.net/undertale/images/3/36/Fe2.gif/revision/latest?cb=20160525223918");
+}
+
+#foto3{
+  background-image: url("https://vignette.wikia.nocookie.net/undertale/images/8/80/UndyneArmadura.gif/revision/latest?cb=20170107185129&path-prefix=es");
+}
+
+#foto4{
+  background-image: url("https://vignette.wikia.nocookie.net/undertale/images/0/01/Toriel.png/revision/latest/scale-to-width-down/206?cb=20151013235610");
+}
+
+#foto5{
+  background-image: url("https://res.cloudinary.com/teepublic/image/private/s---1L6_3g9--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1468451505/production/designs/583411_2.jpg");
+}
+
+#foto6{
+  background-image: url("https://vignette.wikia.nocookie.net/undertale/images/f/fd/Muffet.gif/revision/latest/scale-to-width-down/216?cb=20151209030642");
+}
+
+#foto7{
+  background-image: url("https://res.cloudinary.com/teepublic/image/private/s--LAECX4Rd--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1449867101/production/designs/370646_1.jpg");
+}
+
+#foto8{
+  background-image: url("https://vignette.wikia.nocookie.net/undertale/images/7/7b/MettatonEX.gif/revision/latest?cb=20160314232757&path-prefix=es");
+}
+
+#foto9{
+  background-image: url("https://static.tvtropes.org/pmwiki/pub/images/alphys_0_9.png");
+}
+
+#fotos a:link{
+  color:white;
+  text-decoration: none;
+}
+
+#fotos a:visited{
+  color:white;
+  text-decoration: none;
+}
+
+#fotos ul{
+padding: 2px;
+background-color: white;
+overflow: hidden;
+}
+
+#sabias h3{
+  background-position: 0 -72;
+}
+
+#sabias p{
+  padding-bottom: 12px;
+  width: 90%;
+}
+
+#presentacio, #amistats, #fotos{
+
+}
+
+#postintro{
+  padding: 10px 10px 10px 50px;
+  background-image: url("img/photo.png");
+}
+
+#estat{
+  margin-top: -1500px;
+  background-color: white;
+  box-shadow: 1 1 1 #D3D3D3;
+}
+
+#crear{
+  height: 37px;
+  width: 516px;
+  background-color: rgba(235, 235, 235, 0.8);
+  box-shadow: 1 1 1 #D3D3D3;
+  color: blue;
+  padding: 12px;
+  margin: 0;
+  overflow: hidden;
+}
+
+#miniperfil{
+  float: left;
+  clear: left;
+  padding: 12px;
+  position: absolute;
+  top: 540px;
+  z-index: 1000;
+  height: 42px;
+  width: 42px;
+}
+
+#crear li{
+  list-style: none;
+  height: 38px;
+  margin: 0 0 0 1px;
+  padding: 0 10px;
+  font-size: 8pt;
+  line-height: 48px;
+  float: left;
+}
+
+#pensament{
+  clear: left;
+  height: 72px;
+  width: 516px;
+  padding: 12px;
+  position: relative;
+  font-size: 12pt;
+  margin-left: 50px;
+  border: 0;
+  color: gray;
+}
+
+#botonera_estat{
+  height: 38px;
+  width: 516px;
+}
+
+#estat #botonera_estat li{
+  list-style: none;
+  float: left;
+  margin: 0 0 0 1px;
+  padding: 0 10px;
+  font-size: 8pt;
+  background-color: #F5F5F7;
+  border-radius: 13px;
+  text-indent: 24px;
+}
+
+#estat_fotovideo{
+  background-image: url(img/fotovideo.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+
+}
+
+#estat_etiquetar{
+  background-image: url(img/etiquetar.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+}
+
+#estat_sentimiento{
+  background-image: url(img/sentiment.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+  padding: 1px;
+}
+
+#publica{
+  background-image: url(img/publica.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+
+}
+
+#publica_foto{
+  background-image: url(img/pfoto.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+}
+
+#publica_video{
+  background-image: url(img/pvideo.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+}
+
+#publica_aconteixement{
+  background-image: url(img/pacon.png);
+  background-repeat: no-repeat;
+  background-position: 6px 6px;
+}
+
+}
+
+/* Versió Mòbils */
+
+@media only screen and (max-width: 959px){
+
+  body{
+   margin: 0;
+   padding: 0;
+   background-color: #FFFFFFFF;
+   font-family: 'Lucida Grande', Tahoma, Segoe UI, San Francisco, Roboto;
+  }
+
+  #barra{
+    visibility: hidden;
+  }
+
+  #contingut{
+
+  }
+
+  #contingut #cap{
+    height: 254px;
+    background-image: url(img/backg.jpg);
+    background-repeat: no-repeat;
+    background-size: 80% auto;
+    text-align: center;
+    background-color: black;
+    margin-top: -366px;
+    margin-left: -130px;
+  }
+
+  #fotoperfil{
+    width: 162px;
+    height: 162px;
+    border-radius: 50%;
+    border: solid 4px white;
+    margin-top: 173px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  #vacio{
+
+  }
+
+  #contingut #menu{
+
+  }
+
+  #menu h2{
+    text-align: center;
+    padding-top: 350px;
+    color: black;
+  }
+
+  #menu li{
+    visibility: hidden;
+  }
+
+  #contingut #cap h2{
+    font-size: 28px;
+    font-weight: 20px;
+  }
+
+  li{
+
+  }
+
+  #principal{
+
+  }
+
+  #esquerra {
+
+  }
+
+  #dreta{
+
+  }
+
+  #presentacio{
+    text-align: center;
+  }
+
+  #amistats{
+    visibility: hidden;
+  }
+
+  #fotos{
+    margin-top: -200px;
+    padding: 2px;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  #sabias{
+
+  }
+
+  #feed{
+
+  }
+
+  #feed2{
+
+  }
+
+  #feed3{
+
+  }
+
+  #feed4{
+
+  }
+
+  #feed5{
+
+  }
+
+  #seccions{
+
+  }
+
+  .esquerra{
+  }
+
+  .dreta{
+    width: 100%;
+    float: none;
+    clear: none;
+    padding: 12px;
+    margin-bottom: 30px;
+    box-shadow: 5px 5px 5px grey;
+  }
+
+  .esquerra .dreta{
+
+  }
+
+  #seccions h3{
+
+  }
+
+  #presentacio h3{
+    visibility: hidden;
+  }
+
+  #presentacio li{
+    text-align: left;
+    list-style: none;
+    width: 60%;
+    margin-top: 70px;
+    height: 1px;
+  }
+
+  #presentacio p{
+    visibility: hidden;
+  }
+
+  #presentacio .estudis{
+    list-style-image: url(img/icones_estudis.png);
+  }
+
+  #presentacio .domicili{
+    list-style-image: url(img/icones_domicili.png);
+  }
+
+  #presentacio .feina{
+    list-style-image: url(img/icones_feina.png);
+  }
+
+  #presentacio .neixement{
+    list-style-image: url(img/icones_ubicació.png);
+  }
+
+  #amistats h3{
+
+  }
+
+  #amistats li{
+
+  }
+
+  #AC{
+    background-image: url("http://acarranco2019crn.github.io/m08/s2m8uf0104carranco/img/profile.jpg");
+  }
+
+  #GB{
+    background-image: url("https://gbonsoms2019crn.github.io/M08/s2m8uf104_facebook/img/pajaro.jpg");
+  }
+
+  #SG{
+    background-image: url("https://sgarzon2019crn.github.io/M08/s2m8uf104_facebook/img/perfil.jpg");
+  }
+
+  #NC{
+    background-image: url("https://nchia2019crn.github.io/M08/s2m8uf104_chia/img/perfil.jpg");
+  }
+
+  #SP{
+    background-image: url("https://sperez2019crn.github.io/M08/s2m8uf104_sperez/img/fotoperfil.jpg");
+  }
+
+  #AD{
+    background-image: url("https://adositey2019crn.github.io/M08/UF1/s2m8uf104_facebook/img/photo.png");
+  }
+
+  #MM{
+    background-image: url("https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg");
+  }
+
+  #SM{
+    background-image: url("https://smarcer2019crn.github.io/M08/s2m8uf104_marcer/img/perfil_yo.jpg");
+  }
+
+  #VH{
+    background-image: url("https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png");
+  }
+
+  #amistats a:link{
+
+  }
+
+  #amistats a:visited{
+
+  }
+
+  #amistats ul{
+
+  }
+
+  #fotos h3{
+
+  }
+
+  #fotos li{
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+    background-color: yellow;
+    padding: 1px;
+    float:left;
+    background-size: 100%;
+  }
+
+  #foto1{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMqVcku8W3FBFKzXS46kibJFcJ44JLplALE6dG40BbTgNj_OoSag");
+  }
+
+  #foto2{
+    background-image: url("https://vignette.wikia.nocookie.net/undertale/images/3/36/Fe2.gif/revision/latest?cb=20160525223918");
+  }
+
+  #foto3{
+    background-image: url("https://vignette.wikia.nocookie.net/undertale/images/8/80/UndyneArmadura.gif/revision/latest?cb=20170107185129&path-prefix=es");
+  }
+
+  #foto4{
+    background-image: url("https://vignette.wikia.nocookie.net/undertale/images/0/01/Toriel.png/revision/latest/scale-to-width-down/206?cb=20151013235610");
+  }
+
+  #foto5{
+    background-image: url("https://res.cloudinary.com/teepublic/image/private/s---1L6_3g9--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1468451505/production/designs/583411_2.jpg");
+  }
+
+  #foto6{
+    background-image: url("https://vignette.wikia.nocookie.net/undertale/images/f/fd/Muffet.gif/revision/latest/scale-to-width-down/216?cb=20151209030642");
+  }
+
+  #foto7{
+    background-image: url("https://res.cloudinary.com/teepublic/image/private/s--LAECX4Rd--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1449867101/production/designs/370646_1.jpg");
+  }
+
+  #foto8{
+    background-image: url("https://vignette.wikia.nocookie.net/undertale/images/7/7b/MettatonEX.gif/revision/latest?cb=20160314232757&path-prefix=es");
+  }
+
+  #foto9{
+    background-image: url("https://static.tvtropes.org/pmwiki/pub/images/alphys_0_9.png");
+  }
+
+  #fotos a:link{
+    color:white;
+    text-decoration: none;
+  }
+
+  #fotos a:visited{
+    color:white;
+    text-decoration: none;
+  }
+
+  #fotos ul{
+  padding: 2px;
+  background-color: white;
+  overflow: hidden;
+  }
+
+  #sabias h3{
+
+  }
+
+  #sabias p{
+
+  }
+
+  #presentacio, #amistats, #fotos{
+
+  }
+
+  #postintro{
+
+    background-image: url("img/photo.png");
+  }
+
+  #estat{
+    padding: 0 12px;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+
+  #crear{
+
+  }
+
+  #miniperfil{
+
+  }
+
+  #crear li{
+
+  }
+
+  #pensament{
+
+  }
+
+  #botonera_estat{
+
+  }
+
+  #estat #botonera_estat li{
+
+  }
+
+  #estat_fotovideo{
+    background-image: url(img/fotovideo.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+
+  }
+
+  #estat_etiquetar{
+    background-image: url(img/etiquetar.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  #estat_sentimiento{
+    background-image: url(img/sentiment.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  #publica{
+    background-image: url(img/publica.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+
+  }
+
+  #publica_foto{
+    background-image: url(img/pfoto.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  #publica_video{
+    background-image: url(img/pvideo.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+  #publica_aconteixement{
+    background-image: url(img/pacon.png);
+    background-repeat: no-repeat;
+    background-position: 6px 6px;
+  }
+
+}

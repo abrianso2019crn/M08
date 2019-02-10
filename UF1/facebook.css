@@ -2,13 +2,12 @@ body{
  margin: 0;
  padding: 0;
  background-color: #e9ebed;
- font-family: 'Lucida Grande', Tahoma, Segoe UI, San Francisco, Roboto;
 }
 
 #barra{
  height: 43px;
  background-color: #5066ae;
- position: fixed;
+ position: sticky;
  top: 0;
  left: 0;
  right: 0;
@@ -18,7 +17,6 @@ body{
  height: 2000px;
  width: 852px;
  margin: 0 auto;
- overflow: hidden;
 }
 
 #contingut #cap{
@@ -37,7 +35,7 @@ body{
  width: 169px;
  position: absolute;
  background-image: url(img/photo.png);
- top: 178px;
+ top: 218px;
  left: 550px;
 }
 
@@ -58,12 +56,6 @@ body{
  margin: 0;
  height: 43px;
  width: auto;
-}
-
-#menu li{
-  margin-top: 82px;
-  box-shadow: 1px 0 1px #DDD;
-
 }
 
 #contingut #cap h2{
@@ -87,7 +79,14 @@ li{
 }
 
 #principal{
- overflow: hidden;
+ height: 354px;
+ margin-top: 0px;
+ float: left;
+ background-color: red;
+ width: 40%;
+ color: white;
+ text-align: center;
+ text-decoration: none;
 }
 
 #esquerra {
@@ -99,95 +98,6 @@ li{
  margin-top: 56px;
 }
 
-#presentacio{
-  height: 354px;
-  margin-top: 70px;
-  float: left;
-  background-color: green;
-  width: 100%;
-  color: white;
-  text-align: left;
-  padding-left: 15px;
-  text-decoration: none;
-  overflow: hidden;
-}
-
-#amistats{
-  height: 354px;
-  margin-top: 20px;
-  float: left;
-  background-color: pink;
-  width: 100%;
-  color: black;
-  text-align: left;
-  text-decoration: none;
-  overflow: auto;
-}
-
 #fotos{
-  height: 354px;
-  margin-top: 20px;
-  float: left;
-  background-color: cyan;
-  width: 100%;
-  color: black;
-  text-align: left;
-  text-decoration: none;
-  overflow: hidden;
-}
-
-#seccions{
-  width: 322px;
-  float: left;
-  overflow: hidden;
-}
-
-.esquerra{
-
-}
-
-.dreta{
-  width: 492px;
-  height: 100px;
-  float: right;
-  clear: right;
-}
-
-.esquerra .dreta{
-  overflow: hidden;
-  font-size: 12px;
-  background-color: white;
-  border-radius: 3px;
-  border: solid 1px #000;
-  margin-top: 12px;
-  padding: 12px;
-}
-
-#seccions h3{
-  background-image: url(img/lateral.png);
-  background-repeat: no-repeat;
-  background-position: 0 -24px;
-  text-indent: 26px;
-  height: 24px;
-}
-
-#presentacio h3{
-  background-position: 0 0;
-}
-
-#presentacio p{
-  padding-bottom: 12px;
-  border-bottom: solid 1px #DDD;
-}
-
-#amistats h3{
-  background-position: 0 -48;
-}
-
-#surprise h3{
-  background-position: 0 -72;
-}
-
-#presentacio, #amistats, #fotos{
-
+ background-color: red;
 }
