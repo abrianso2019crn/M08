@@ -19,7 +19,7 @@ body{
 }
 
 #contingut{
- height: 2000px;
+ height: 2500px;
  width: 852px;
  margin: 0 auto;
  overflow: hidden;
@@ -543,6 +543,52 @@ overflow: hidden;
   background-position: 6px 6px;
 }
 
+#publicacio1{
+  margin-top: -1250px;
+  background-color: white;
+}
+
+#publicacio2{
+  margin-top: -960px;
+  background-color: white;
+}
+
+.comentari{
+  clear: left;
+  height: 24px;
+  width: 360px;
+  padding: 8px;
+  position: relative;
+  font-size: 12pt;
+  margin-left: 50px;
+  border: 0;
+  color: gray;
+}
+
+#publicacio1 li{
+  text-align: left;
+  list-style: none;
+  float: left;
+  margin: 0 0 0 1px;
+  padding: 0 10px;
+  font-size: 8pt;
+  background-color: #F5F5F7;
+  border-radius: 13px;
+  text-indent: 24px;
+}
+
+#publicacio2 li{
+  text-align: left;
+  list-style: none;
+  float: left;
+  margin: 0 0 0 1px;
+  padding: 0 10px;
+  font-size: 8pt;
+  background-color: #F5F5F7;
+  border-radius: 13px;
+  text-indent: 24px;
+}
+
 }
 
 /* Versió Mòbils */
@@ -596,6 +642,8 @@ overflow: hidden;
   }
 
   #menu h2{
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     padding-top: 350px;
     color: black;
@@ -631,18 +679,23 @@ overflow: hidden;
   }
 
   #amistats{
-    visibility: hidden;
+    margin-top: 500px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #fotos{
-    margin-top: -200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -500px;
     padding: 2px;
     background-color: white;
     overflow: hidden;
+    list-style: none;
   }
 
   #sabias{
-
+    visibility: hidden;
   }
 
   #feed{
@@ -696,13 +749,13 @@ overflow: hidden;
   #presentacio li{
     text-align: left;
     list-style: none;
-    width: 60%;
     margin-top: 70px;
     height: 1px;
   }
 
   #presentacio p{
-    visibility: hidden;
+    margin-top: 100px;
+    text-align: center;
   }
 
   #presentacio .estudis{
@@ -726,51 +779,73 @@ overflow: hidden;
   }
 
   #amistats li{
-
+    width: 110px;
+    height: 110px;
+    margin: 5px;
+    display: inline-block;
+    background-color: white;
+    padding: 1px;
+    float:left;
+    background-size: 100%;
   }
 
   #AC{
+    border-radius: 10px;
     background-image: url("http://acarranco2019crn.github.io/m08/s2m8uf0104carranco/img/profile.jpg");
   }
 
   #GB{
+    border-radius: 10px;
     background-image: url("https://gbonsoms2019crn.github.io/M08/s2m8uf104_facebook/img/pajaro.jpg");
   }
 
   #SG{
+    border-radius: 10px;
     background-image: url("https://sgarzon2019crn.github.io/M08/s2m8uf104_facebook/img/perfil.jpg");
   }
 
   #NC{
+    border-radius: 10px;
     background-image: url("https://nchia2019crn.github.io/M08/s2m8uf104_chia/img/perfil.jpg");
   }
 
   #SP{
+    border-radius: 10px;
     background-image: url("https://sperez2019crn.github.io/M08/s2m8uf104_sperez/img/fotoperfil.jpg");
   }
 
   #AD{
+    border-radius: 10px;
     background-image: url("https://adositey2019crn.github.io/M08/UF1/s2m8uf104_facebook/img/photo.png");
   }
 
   #MM{
+    border-radius: 10px;
     background-image: url("https://mmunozp2019crn.github.io/M08/s2m8uf104_munoz/img/logo.jpg");
   }
 
   #SM{
+    border-radius: 10px;
     background-image: url("https://smarcer2019crn.github.io/M08/s2m8uf104_marcer/img/perfil_yo.jpg");
   }
 
   #VH{
+    border-radius: 10px;
     background-image: url("https://vherrero2019crn.github.io/M08/s2m8uf104facebook/img/perfil.png");
   }
 
-  #amistats a:link{
+  #amistats a{
+    margin-top: 110px;
+  }
 
+  #amistats a:link{
+    color:blue;
+    text-decoration: none;
   }
 
   #amistats a:visited{
-
+    color:blue;
+    text-decoration: none;
   }
 
   #amistats ul{
@@ -792,6 +867,7 @@ overflow: hidden;
   }
 
   #foto1{
+    border-radius: 10px 0px 0px 0px;
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMqVcku8W3FBFKzXS46kibJFcJ44JLplALE6dG40BbTgNj_OoSag");
   }
 
@@ -800,6 +876,7 @@ overflow: hidden;
   }
 
   #foto3{
+    border-radius: 0px 10px 0px 0px;
     background-image: url("https://vignette.wikia.nocookie.net/undertale/images/8/80/UndyneArmadura.gif/revision/latest?cb=20170107185129&path-prefix=es");
   }
 
@@ -816,6 +893,7 @@ overflow: hidden;
   }
 
   #foto7{
+    border-radius: 0px 0px 0px 10px;
     background-image: url("https://res.cloudinary.com/teepublic/image/private/s--LAECX4Rd--/t_Preview/b_rgb:191919,c_limit,f_jpg,h_630,q_90,w_630/v1449867101/production/designs/370646_1.jpg");
   }
 
@@ -824,6 +902,7 @@ overflow: hidden;
   }
 
   #foto9{
+    border-radius: 0px 0px 10px 0px;
     background-image: url("https://static.tvtropes.org/pmwiki/pub/images/alphys_0_9.png");
   }
 
@@ -872,23 +951,51 @@ overflow: hidden;
   }
 
   #miniperfil{
-
+    float: left;
+    clear: left;
+    padding: 12px;
+    position: absolute;
+    margin-top: 540px;
+    height: 42px;
+    width: 42px;
   }
 
   #crear li{
-
+    list-style: none;
+    height: 38px;
+    margin: 0 0 0 1px;
+    padding: 0 10px;
+    font-size: 8pt;
+    line-height: 48px;
+    float: left;
   }
 
   #pensament{
-
+    clear: left;
+    height: 72px;
+    width: 516px;
+    padding: 12px;
+    position: relative;
+    font-size: 12pt;
+    margin-left: 50px;
+    border: 0;
+    color: gray;
   }
 
   #botonera_estat{
-
+    height: 38px;
+    width: 516px;
   }
 
   #estat #botonera_estat li{
-
+    list-style: none;
+    float: left;
+    margin: 0 0 0 1px;
+    padding: 0 10px;
+    font-size: 8pt;
+    background-color: #F5F5F7;
+    border-radius: 13px;
+    text-indent: 24px;
   }
 
   #estat_fotovideo{
@@ -908,6 +1015,7 @@ overflow: hidden;
     background-image: url(img/sentiment.png);
     background-repeat: no-repeat;
     background-position: 6px 6px;
+    padding: 1px;
   }
 
   #publica{
@@ -933,6 +1041,42 @@ overflow: hidden;
     background-image: url(img/pacon.png);
     background-repeat: no-repeat;
     background-position: 6px 6px;
+  }
+
+  #publicacio1{
+    background-color: white;
+  }
+
+  #publicacio2{
+    background-color: white;
+  }
+
+  #publicacio1 li{
+    text-align: left;
+    list-style: none;
+    float: left;
+    margin: 0 0 0 1px;
+    padding: 0 10px;
+    font-size: 8pt;
+    background-color: #F5F5F7;
+    border-radius: 13px;
+    text-indent: 24px;
+  }
+
+  #publicacio2 li{
+    text-align: left;
+    list-style: none;
+    float: left;
+    margin: 0 0 0 1px;
+    padding: 0 10px;
+    font-size: 8pt;
+    background-color: #F5F5F7;
+    border-radius: 13px;
+    text-indent: 24px;
+  }
+
+  .comentari{
+    visibility: hidden;
   }
 
 }
