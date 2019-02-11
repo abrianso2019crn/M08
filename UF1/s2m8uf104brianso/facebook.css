@@ -549,7 +549,12 @@ overflow: hidden;
 }
 
 #publicacio2{
-  margin-top: -960px;
+  margin-top: -950px;
+  background-color: white;
+}
+
+#publicacio3{
+  margin-top: -680px;
   background-color: white;
 }
 
@@ -578,6 +583,18 @@ overflow: hidden;
 }
 
 #publicacio2 li{
+  text-align: left;
+  list-style: none;
+  float: left;
+  margin: 0 0 0 1px;
+  padding: 0 10px;
+  font-size: 8pt;
+  background-color: #F5F5F7;
+  border-radius: 13px;
+  text-indent: 24px;
+}
+
+#publicacio3 li{
   text-align: left;
   list-style: none;
   float: left;
@@ -642,8 +659,6 @@ overflow: hidden;
   }
 
   #menu h2{
-    margin-left: auto;
-    margin-right: auto;
     text-align: center;
     padding-top: 350px;
     color: black;
@@ -682,6 +697,7 @@ overflow: hidden;
     margin-top: 500px;
     margin-left: auto;
     margin-right: auto;
+    width: 450px;
   }
 
   #fotos{
@@ -692,6 +708,7 @@ overflow: hidden;
     background-color: white;
     overflow: hidden;
     list-style: none;
+    width: 450px;
   }
 
   #sabias{
@@ -1051,6 +1068,10 @@ overflow: hidden;
     background-color: white;
   }
 
+  #publicacio3{
+    background-color: white;
+  }
+
   #publicacio1 li{
     text-align: left;
     list-style: none;
@@ -1064,6 +1085,18 @@ overflow: hidden;
   }
 
   #publicacio2 li{
+    text-align: left;
+    list-style: none;
+    float: left;
+    margin: 0 0 0 1px;
+    padding: 0 10px;
+    font-size: 8pt;
+    background-color: #F5F5F7;
+    border-radius: 13px;
+    text-indent: 24px;
+  }
+
+  #publicacio3 li{
     text-align: left;
     list-style: none;
     float: left;
