@@ -691,6 +691,7 @@ overflow: hidden;
 
   #presentacio{
     text-align: center;
+    width=100%;
   }
 
   #amistats{
@@ -698,6 +699,7 @@ overflow: hidden;
     margin-left: auto;
     margin-right: auto;
     width: 450px;
+    box-shadow: 5px 5px 5px grey;
   }
 
   #fotos{
@@ -1062,15 +1064,18 @@ overflow: hidden;
 
   #publicacio1{
     background-color: white;
+    width=100%;
   }
 
   #publicacio2{
     background-color: white;
+    width=100%;
   }
 
   #publicacio3{
     background-color: white;
     padding: 5px;
+    width=100%;
   }
 
   #publicacio1 li{
