@@ -636,6 +636,7 @@ overflow: hidden;
     background-color: black;
     margin-top: -366px;
     margin-left: -130px;
+    width: 100%;
   }
 
   #fotoperfil{
@@ -1064,18 +1065,18 @@ overflow: hidden;
 
   #publicacio1{
     background-color: white;
-    width=100%;
+    width:100%;
   }
 
   #publicacio2{
     background-color: white;
-    width=100%;
+    width:100%;
   }
 
   #publicacio3{
     background-color: white;
     padding: 5px;
-    width=100%;
+    width:100%;
   }
 
   #publicacio1 li{
