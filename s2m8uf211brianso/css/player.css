@@ -1,0 +1,215 @@
+/* Versió Escriptori */
+
+@media only screen and (min-width: 960px){
+
+  body{
+        background-color: white;
+        margin:0;
+        top:0;
+        left: 0;
+        right: 0
+      }
+
+      #header{
+        height: 80px;
+        width: 100%;
+        background-color: #1C3460;
+        position: sticky;
+        float: left;
+      }
+
+      #header li{
+        display: inline-block;
+        text-decoration: none;
+        margin-top: -15px;
+      }
+
+      .main{
+        display: block;
+        margin: 0 auto;
+        height: 77px;
+        width: 77px;
+        float: right;
+      }
+
+      .minimize{
+        top: -10px;
+        margin: 10px;
+        height: 20px;
+        width: 40px;
+        float: left;
+      }
+
+      #contenidor {
+        width: 100%;
+        float: left;
+        height: 820px;
+        padding: 20px;
+        background: green;
+        position: static;
+      }
+
+      #covers{
+        height: 800px;
+        width: 100%;
+        background-color: pink;
+        display: block;
+
+      }
+      .cover2 {
+        width: 10%;
+        height: 25%;
+        background-image: url(img/test.jpg);
+        background: rgba(255, 0, 255, 1);
+        position: relative;
+        float: left;
+        margin: 10%;
+      }
+
+      .cover {
+        width: 35%;
+        height: 60%;
+        display: block;
+        margin: 0 auto;
+        background-image: url(img/test.jpg);
+        background: rgba(255, 255, 255, 0.4);
+        position: relative;
+        float:left;
+      }
+
+      .info {
+        width: 500px;
+        height: 80px;
+        display: block;
+        margin: -300px auto;
+        background-color: red;
+      }
+
+      .info h4{
+        margin-top: 15px;
+        text-align: center;
+        color: white;
+      }
+
+      .info h2{
+        margin-top: 5px;
+        text-align: center;
+        color: white;
+      }
+
+      #carril{
+        margin-top: 200px;
+        height: 200px;
+        width: 100%;
+      }
+      /* --------------- Tiradors ----------------- */
+
+      input[type=range] {
+        -webkit-appearance: none; /* Amaga el tirador per fer la màgia */
+        width: 97%; /* Firefox necessita una amplada específica */
+        background: transparent;  /* Amaga el tirador per fer la màgia */
+        background: rgba(255,255,255, 0.2);
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+      input[type=range]:focus {
+        outline: none; /* Per no veure el contorn */
+      }
+
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+        background: #4c4d4d;
+        border-radius: 10px;
+        border: 0px solid #010101;
+      }
+
+      /* Controlador */
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        background: rgba(255,255,255, 0.3);
+        cursor: pointer;
+
+        margin-top: -0.0px;
+
+        box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+        border: 0px solid #ff1e00;
+      }
+
+      /*  opcional  */
+      /*
+      input[type=range]:focus::-webkit-slider-runnable-track {
+        background: red;
+        border-radius: 10px;
+      }
+      */
+
+
+      /* --------------- Botons ----------------- */
+
+      #playpause {
+        display: block;
+        margin: 0 auto;
+        position:relative;
+        border:none;
+        text-decoration:none;
+        width: 100px;
+        height: 100px;
+        background: #4566AE;
+        border-radius: 50px;
+      }
+
+      #playpause:focus {
+        outline: none; /* Per no veure el contorn */
+      }
+      #playpause:before, #playpause:after, #playpause:focus:before, #playpause:focus:after {
+        position: absolute;
+        content: " ";
+        z-index: 1000;
+      }
+      #playpause:before, #playpause:after {
+        height: 47px;
+        width: 19px;
+        left: 29px;
+        top: 28px;
+        display: block;
+        background: white;
+      }
+
+      #playpause:after {
+       left: 54px;
+      }
+
+      #playpause:focus:before {
+        top: 28px;
+        left: 34px;
+        width: 0;
+        height: 0;
+        border-left: 47px solid white;
+        border-right: 24px solid transparent;
+        border-bottom: 24px solid transparent;
+        border-top: 24px solid transparent;
+        display: block;
+        background: transparent;
+      }
+
+      #playpause:focus:after {
+       visibility:hidden;
+      }
+
+
+}
+
+
+/* Versió Mòbils */
+
+@media only screen and (max-width: 959px){
+
+
+
+}
