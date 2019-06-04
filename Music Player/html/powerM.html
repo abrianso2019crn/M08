@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="../css/Index.css" media="screen">
+    <script src="jquery-1.10.2.min.js"></script>
+
+    <script>
+
+      var reproduint, playpause, barra;
+      var vesa, noutemps;
+
+      function inicialitzaReproductor() {
+        reproduint = document.getElementById("reproduint");
+        playpause = document.getElementById("playpause");
+        barra = document.getElementById("barra");
+
+        playpause.addEventListener("click", playPause, false);
+        barra.addEventListener("change", posicioAudio, false);
+        reproduint.addEventListener("timeupdate", actualitzaTemps, false);
+
+        playpause.focus();
+      }
+
+      window.onload = inicialitzaReproductor;
+
+      function playPause() {
+        if(reproduint.paused) {
+          reproduint.play();
+          playpause.blur();
+        }
+        else {
+          reproduint.pause();
+          playpause.focus();
+        }
+      }
+
+
+      function posicioAudio() {
+        var vesa = parseInt(reproduint.duration * (barra.value / 1000));
+        reproduint.currentTime = vesa;
+        console.log(reproduint.currentTime);
+      }
+
+
+      function actualitzaTemps() {
+        var noutemps = parseInt(reproduint.currentTime * (1000 / reproduint.duration));
+        barra.value = noutemps;
+        console.log(barra.value);
+      }
+
+
+    </script>
+  </head>
+  <body>
+    <div id="menu" class="esquerra">
+
+      <img id="logo" src="../img/logo.png"/>
+      <input id="login" type="button" value="Login" onclick="location.href='html/login.html';">
+      <input id="register" type="button" value="Register" onclick="location.href='html/register.html';">
+      <form>
+        <input id="buscar" type="text" name="busca" placeholder="Busca..."><br>
+      </form>
+      <ul>
+        <li class="menuli">Novedades</li>
+        <li class="menuli">Más escuchado</li>
+        <li class="menuli">Géneros</li>
+        <li class="menuli">Álbumes</li>
+      </ul>
+
+      <h2>Tu música</h2>
+      <ul>
+        <li class="menuli">Canciones</li>
+        <li class="menuli">Álbumes</li>
+        <li class="menuli">Artistas</li>
+      </ul>
+
+    </div>
+
+    <div id="contingut" .class="centre">
+    </div>
+
+    <div id="playlist" class="dreta">
+      <h2>Playlist</h2>
+      <ul id="playl">
+        <a href="../Index.html"><li class="plist">Nothing Could Be Better</li></a>
+        <a href="houdiniM.html"><li class="plist">Houdini</li></a>
+        <a href="buryM.html"><li class="plist">Bury a Friend</li></a>
+        <li class="plist">We Appreciate Power</li>
+      </ul>
+      <div id="contenidor">
+        <input type="image" class="maximize" src="../img/maximize.png" onclick="location.href='powerP.html';"/>
+
+      <img id="cover" src="../img/grimes.jpg">
+
+    </img>
+      <div class="info">
+        <h4>Now playing:</h4>
+        <h2>We Appreciate Power - Grimes</h2>
+      </div>
+    </div>
+
+  </div>
+  <div id="bottom">
+    <div id="carril"></div>
+    <audio id="reproduint" width="500" height="40" autoplay src="../mp3/power.mp3" type="audio/mp3"></audio>
+    <input id="barra" type="range" min="0" max="1000" value="0" step="1">
+    <div id="botons">
+      <input type="image" id="bck" src="../img/previous.png" onclick="location.href='buryM.html';";/>
+      <button id="playpause"></button>
+      <input type="image" id="fwd" src="../img/next.png" onclick="location.href='../Index.html';";/>
+    </div>
+  </div>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="img/icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="../css/player.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="../css/player_p.css" media="print">
+
+    <script>
+
+      var reproduint, playpause, barra;
+      var vesa, noutemps;
+
+      function inicialitzaReproductor() {
+        reproduint = document.getElementById("reproduint");
+        playpause = document.getElementById("playpause");
+        barra = document.getElementById("barra");
+
+        playpause.addEventListener("click", playPause, false);
+        barra.addEventListener("change", posicioAudio, false);
+        reproduint.addEventListener("timeupdate", actualitzaTemps, false);
+
+        playpause.focus();
+      }
+
+      window.onload = inicialitzaReproductor;
+
+      function playPause() {
+        if(reproduint.paused) {
+          reproduint.play();
+          playpause.blur();
+        }
+        else {
+          reproduint.pause();
+          playpause.focus();
+        }
+      }
+
+
+      function posicioAudio() {
+        var vesa = parseInt(reproduint.duration * (barra.value / 1000));
+        reproduint.currentTime = vesa;
+        console.log(reproduint.currentTime);
+      }
+
+
+      function actualitzaTemps() {
+        var noutemps = parseInt(reproduint.currentTime * (1000 / reproduint.duration));
+        barra.value = noutemps;
+        console.log(barra.value);
+      }
+
+
+    </script>
+  </head>
+  <body>
+    <div id="header">
+      <ul>
+        <li><input type="image" class="minimize" src="../img/minimize.png" onclick="location.href='../Index.html';"/></li>
+        <li><input type="image" class="main" src="../img/logo.png" /></li>
+      </ul>
+
+    </div>
+    <div id="contenidor">
+      <div id="covers">
+        <div class="cover1">
+
+        </div>
+
+        <img id="cover" src="../img/nothing.jpg">
+
+      </img>
+
+        <div class="cover2">
+
+        </div>
+      </div>
+    <div class="info">
+      <h4>Now playing:</h4>
+      <h2>Nothing Could Be Better<br>Homeshake</h2>
+    </div>
+      <div id="carril"></div>
+      <audio id="reproduint" width="500" height="40" autoplay src="../mp3/nothing.mp3" type="audio/mp3"></audio>
+      <input id="barra" type="range" min="0" max="1000" value="0" step="1">
+      <div id="botons">
+        <input type="image" id="bck" src="../img/previous.png" onclick="location.href='powerP.html';";/>
+        <button id="playpause"></button>
+        <input type="image" id="fwd" src="../img/next.png" onclick="location.href='houdiniP.html';";/>
+      </div>
+  </div>
+
+  </body>
+</html>

@@ -1,0 +1,658 @@
+/* Versió Escriptori */
+
+@media only screen and (min-width: 960px){
+
+  body{
+        background-color: #1B1B1B;
+        margin:0;
+        top:0;
+        left: 0;
+        right: 0
+        font-family: Arial;
+      }
+
+      #contenidor {
+        width: 20%;
+        height: 700px;
+        margin: 0 auto;
+      }
+
+      #menu{
+        text-align: center;
+      }
+
+      #barra{
+        height: 5px;
+        width: 100%;
+        background-color: #4566AE;
+        border-radius: 20px;
+      }
+
+      #carril{
+        width: 8px;
+        height: 8px;
+        background-color:#4566AE;
+        border-radius: 50%;
+        margin-left: -5px;
+        transform: scale(2);
+      }
+
+      #seek-bar{
+        width: 60%;
+        height: 5px;
+        background-color:gray;
+        display: flex;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-top: 37%;
+      }
+
+      #play img,#fwd img,#bck img{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+      #logo{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5%;
+      }
+
+      #playlist{
+        text-align: center;
+
+      }
+
+      #login{
+        height: 40px;
+        width: 80px;
+        background-color: #4566AE;
+        margin-right: 30px;
+        cursor: pointer;
+      }
+
+      #register{
+        height: 40px;
+        width: 80px;
+        cursor: pointer;
+      }
+
+      #bottom{
+        padding: 25px;
+        width: 100%;
+        height: 900px;
+        background-color: #1F1F1F;
+        margin: 0px;
+      }
+
+      #playl{
+        height: 400px;
+        overflow-y: scroll;
+        text-align: center;
+        background-color: gray;
+      }
+
+      #botons{
+        height: 50px;
+        width: 100%;
+        margin-top: 50px;
+        position:relative;
+        top:10%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        margin: 0 auto;
+      }
+
+      #playpause {
+        display: block;
+        margin: 0 auto;
+        position:absolute;
+        border:none;
+        text-decoration:none;
+        width: 100px;
+        height: 100px;
+        border: 0;
+        background: #4566AE;
+        border-radius: 50px;
+        cursor: pointer;
+        transform: translate(-50%,-50%);
+        top:70%;
+        left: 50%;
+      }
+
+      #bck{
+        height: 60px;
+        width: 60px;
+        background-image: url(img/previous.png);
+        margin-left: -200px;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top:70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+      #fwd{
+        height: 60px;
+        width: 60px;
+        background-image: url(img/next.png);
+        margin-left: 200px;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top:70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+      #buscar{
+        height: 30px;
+        width: 190px;
+        margin-top: 30px;
+        border-radius: 20px;
+      }
+
+      a{
+        text-decoration: none;
+      }
+
+      a:visited{
+        color: white;
+      }
+
+      ul{
+        list-style-type: none;
+        margin: 1%;
+        color: white;
+      }
+
+      .info h4{
+        width: 100%;
+        text-align: center;
+        color: white;
+      }
+
+      h2{
+        text-align: center;
+        color: white;
+      }
+
+      .esquerra{
+        float: left;
+        width: 20%;
+        background-color: black;
+        height: 950px;
+        text-align: center;
+        overflow: hidden;
+      }
+
+      .centre{
+        display: block;
+        margin: 0 auto;
+        width: 60%;
+        height: 700px;
+        overflow: hidden;
+      }
+
+      .dreta{
+        float: right;
+        width: 20%;
+        background-color: black;
+        height: 950px;
+        overflow: hidden;
+      }
+
+      .menuli{
+        margin: 12%;
+        margin-left: 15%;
+        text-align: center;
+        margin-left: 0px;
+        cursor: pointer;
+      }
+
+      #cover {
+        width:300px;
+        height: 300px;
+        position: relative;
+        top: 50px;
+        left: 120px;
+        background-size: cover;
+      }
+
+      .info {
+        height: 100px;
+        text-align: center;
+        margin: 0 auto;
+
+      }
+
+      .plist{
+        padding: 15%;
+        border-bottom: solid 1px black;
+        margin-right: 10%;
+        cursor: pointer;
+      }
+
+      .maximize{
+        margin-top: 10px;
+        margin-bottom: -10px;
+        margin-left: -300px;
+        height: 25px;
+        width: 50px;
+        position: relative;
+        left: 172px;
+        top: -275px;
+      }
+
+      /* --------------- Tiradors ----------------- */
+
+      input[type=range] {
+        -webkit-appearance: none; /* Amaga el tirador per fer la màgia */
+        width: 97%; /* Firefox necessita una amplada específica */
+        background: transparent;  /* Amaga el tirador per fer la màgia */
+        background: rgba(255,255,255, 0.2);
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+      input[type=range]:focus {
+        outline: none; /* Per no veure el contorn */
+      }
+
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+        background: #4c4d4d;
+        border-radius: 10px;
+        border: 0px solid #010101;
+      }
+
+      /* Controlador */
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        background: rgba(255,255,255, 0.3);
+        cursor: pointer;
+
+        margin-top: -0.0px;
+
+        box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+        border: 0px solid #ff1e00;
+      }
+
+      /*  opcional  */
+      /*
+      input[type=range]:focus::-webkit-slider-runnable-track {
+        background: red;
+        border-radius: 10px;
+      }
+      */
+
+
+      /* --------------- Botons ----------------- */
+
+
+
+      #playpause:focus {
+        outline: none; /* Per no veure el contorn */
+      }
+      #playpause:before, #playpause:after, #playpause:focus:before, #playpause:focus:after {
+        position: absolute;
+        content: " ";
+        z-index: 1000;
+      }
+      #playpause:before, #playpause:after {
+        height: 47px;
+        width: 19px;
+        left: 29px;
+        top: 28px;
+        display: block;
+        background: white;
+      }
+
+      #playpause:after {
+       left: 54px;
+      }
+
+      #playpause:focus:before {
+        top: 28px;
+        left: 34px;
+        width: 0;
+        height: 0;
+        border-left: 47px solid white;
+        border-right: 24px solid transparent;
+        border-bottom: 24px solid transparent;
+        border-top: 24px solid transparent;
+        display: block;
+        background: transparent;
+      }
+
+      #playpause:focus:after {
+       visibility:hidden;
+      }
+
+}
+
+
+/* Versió Mòbils */
+
+@media only screen and (max-width: 959px){
+
+  body{
+        background-color: #1B1B1B;
+        margin:0;
+        top:0;
+        left: 0;
+        right: 0
+      }
+
+      #contenidor {
+        width: 20%;
+        margin: 0 auto;
+        background-color: #1B1B1B;
+      }
+
+      #logo{
+        height: 100px;
+        width: 100px;
+      }
+
+      #menu{
+        text-align: center;
+      }
+
+      #barra{
+        height: 5px;
+        background-color: #4566AE;
+        border-radius: 20px;
+      }
+
+      #carril{
+        width: 8px;
+        height: 8px;
+        background-color:#4566AE;
+        border-radius: 50%;
+        margin-left: -5px;
+        transform: scale(2);
+      }
+
+      #seek-bar{
+        width: 60%;
+        height: 5px;
+        background-color:gray;
+        display: flex;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-top: 37%;
+      }
+
+
+      #logo{
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 5%;
+      }
+
+      #playlist{
+        text-align: center;
+
+      }
+
+      #login{
+        height: 40px;
+        width: 80px;
+        background-color: #4566AE;
+        cursor: pointer;
+      }
+
+      #register{
+        height: 40px;
+        width: 80px;
+        cursor: pointer;
+        background-color: white;
+        margin: 10px;
+      }
+
+      #bottom{
+        width: 375px;
+        height: 200px;
+        margin: 0px;
+        margin-bottom: 0;
+      }
+
+      #botons{
+        height: 120px;
+        width: 225%;
+        margin-top: 50px;
+        position:fixed;
+        left: 45%;
+        transform: translate(-50%,-50%);
+        background-color: black;
+      }
+
+      #playpause {
+        display: block;
+        margin: 0 auto;
+        position:absolute;
+        border:none;
+        text-decoration:none;
+        width: 100px;
+        height: 100px;
+        border: 0;
+        background: #4566AE;
+        border-radius: 50px;
+        cursor: pointer;
+        top:-5%;
+        left: 47%;
+      }
+
+
+
+      #bck{
+        height: 50px;
+        width: 50px;
+        background-image: url(img/previous.png);
+        margin-left: -200px;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top:40%;
+        left: 63%;
+        transform: translate(-50%,-50%);
+      }
+
+      #fwd{
+        height: 50px;
+        width: 50px;
+        background-image: url(img/next.png);
+        margin-left: 200px;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top:40%;
+        left: 43%;
+        transform: translate(-50%,-50%);
+      }
+
+      #buscar{
+        height: 15px;
+        width: 80px;
+        margin-top: 0px;
+        border-radius: 20px;
+      }
+
+      ul{
+        list-style-type: none;
+        margin: 1%;
+        color: white;
+      }
+
+      .info h4{
+        width: 30%;
+        text-align: center;
+        color: white;
+        opacity: 0;
+      }
+
+      .info h2{
+        margin-top: -60px;
+        text-align: center;
+        color: white;
+      }
+
+      h2{
+        text-align: center;
+        color: white;
+      }
+
+      .esquerra{
+        float: left;
+        width: 35%;
+        background-color: black;
+        height: 90%;
+        text-align: center;
+        overflow: scroll;
+      }
+
+      .centre{
+        display: block;
+        margin: 0 auto;
+        width: 20%;
+        height: 100%;
+        overflow: hidden;
+        position: fixed;
+      }
+
+
+      .menuli{
+        margin: 12%;
+        margin-left: 15%;
+        text-align: center;
+        margin-left: 0px;
+        cursor: pointer;
+      }
+
+      #cover {
+        width:200px;
+        height: 200px;
+        margin-top: -40px;
+        margin-left: 0px;
+        z-index: 100;
+      }
+
+      .info {
+        width: 20%;
+        height: 80px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 0px;
+
+      }
+
+      .maximize{
+        margin-top: -100px;
+        margin-bottom: -10px;
+        margin-left: 0;
+        height: 25px;
+        width: 50px;
+        margin: 0 auto;
+        position: relative;
+        top: -50px;
+     }
+
+      .plist{
+        opacity: 0;
+      }
+
+      /* --------------- Tiradors ----------------- */
+
+      input[type=range] {
+        -webkit-appearance: none; /* Amaga el tirador per fer la màgia */
+        width: 97%; /* Firefox necessita una amplada específica */
+        background: transparent;  /* Amaga el tirador per fer la màgia */
+        background: rgba(255,255,255, 0.2);
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+      input[type=range]:focus {
+        outline: none; /* Per no veure el contorn */
+      }
+
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+        background: #4c4d4d;
+        border-radius: 10px;
+        border: 0px solid #010101;
+        left: 30%;
+      }
+
+      /* Controlador */
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        background: rgba(255,255,255, 0.3);
+        cursor: pointer;
+
+        margin-top: -0.0px;
+
+        box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+        border: 0px solid #ff1e00;
+
+      }
+
+      /* --------------- Botons ----------------- */
+
+      #playpause:focus {
+        outline: none; /* Per no veure el contorn */
+      }
+      #playpause:before, #playpause:after, #playpause:focus:before, #playpause:focus:after {
+        position: absolute;
+        content: " ";
+        z-index: 1000;
+      }
+      #playpause:before, #playpause:after {
+        height: 47px;
+        width: 19px;
+        left: 29px;
+        top: 28px;
+        display: block;
+        background: white;
+      }
+
+      #playpause:after {
+       left: 54px;
+      }
+
+      #playpause:focus:before {
+        top: 28px;
+        left: 34px;
+        width: 0;
+        height: 0;
+        border-left: 47px solid white;
+        border-right: 24px solid transparent;
+        border-bottom: 24px solid transparent;
+        border-top: 24px solid transparent;
+        display: block;
+        background: transparent;
+      }
+
+      #playpause:focus:after {
+       visibility:hidden;
+      }
+
+}

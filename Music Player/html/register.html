@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music Player</title>
+    <link rel="stylesheet" type="text/css" href="css/Index.css" media="screen">
+    <style>
+
+      body{
+        height: 100%;
+        width: 100%;
+        background-color: #1F1F1F;
+      }
+
+      #cuadre{
+        height: 600px;
+        width: 400px;
+        background-color: #4566AE;
+        color: white;
+        text-align: center;
+        padding: 2%;
+        border-radius: 30px;
+        margin: 0 auto;
+        margin-top: 20px;
+      }
+
+      .main{
+        border: solid 1px white;
+        border-radius: 250px;
+        margin-bottom: 40px;
+      }
+
+      .atras{
+        height: 60px;
+        width: 35px;
+        margin: 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <input type="image" class="atras" src="../img/esquerra.png" onclick="location.href='../Index.html';"/>
+
+    <div id="cuadre">
+      <input type="image" class="main" src="../img/logo.png" />
+      <form action="/action_page.php">
+        Usuario:<br>
+        <input type="text" name="firstname" value="">
+        <br><br>
+        Correo electrónico:<br>
+        <input type="text" name="firstname" value="">
+        <br><br>
+        Contraseña:<br>
+        <input type="password" name="lastname" value="">
+        <br><br>
+        Confirmar contraseña:<br>
+        <input type="password" name="firstname" value="">
+        <br><br>
+        <input type="button" value="Registrar">
+      </form>
+    </div>
+
+  </body>
+</html>

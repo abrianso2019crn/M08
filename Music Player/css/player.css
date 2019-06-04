@@ -1,0 +1,509 @@
+/* Versió Escriptori */
+
+@media only screen and (min-width: 960px){
+
+  html{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  body{
+        background-color: #1F1F1F;
+        margin:0;
+        padding: 0;
+        top:0;
+        left: 0;
+        right: 0;
+      }
+
+      #header{
+        height: 80px;
+        width: 100%;
+        background-color: #1C3460;
+        position: fixed;
+        float: left;
+        overflow: hidden;
+      }
+
+      #header li{
+        display: inline-block;
+        text-decoration: none;
+        margin-top: -15px;
+      }
+
+      .main{
+        display: block;
+        margin: 0 auto;
+        height: 77px;
+        width: 77px;
+        float: right;
+      }
+
+      .minimize{
+        top: -10px;
+        margin: 10px;
+        height: 20px;
+        width: 40px;
+        float: left;
+      }
+
+      #contenidor {
+        width: 100%;
+        float: left;
+        height: 820px;
+        padding: 20px;
+        position: static;
+        overflow: hidden;
+      }
+
+      #covers{
+        height: 800px;
+        width: 100%;
+        display: block;
+        margin-top: 80px;
+      }
+
+      .cover1 {
+        width: 10%;
+        height: 25%;
+        background-repeat: no-repeat;
+        position: relative;
+        float: left;
+        margin: 10%;
+      }
+
+      .cover2 {
+        width: 10%;
+        height: 25%;
+        background-repeat: no-repeat;
+        position: relative;
+        float: left;
+        margin: 10%;
+      }
+
+      #cover {
+        width: 20%;
+        height: 50%;
+        display: block;
+        margin: 0 auto;
+        background-image: url(img/test.jpg);
+        background: rgba(255, 255, 255, 0.4);
+        position: relative;
+        float:left;
+        top: 50px;
+        left: 185px;
+      }
+
+      .info {
+        width: 500px;
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+        margin-top: -800px;
+      }
+
+      .info h4{
+        margin-top: -50px;
+        text-align: center;
+        color: white;
+        opacity: 0;
+      }
+
+      .info h2{
+        position: relative;
+        top: -120px;
+        text-align: center;
+        color: white;
+      }
+
+      #carril{
+        margin-top: 200px;
+        height: 200px;
+        width: 100%;
+      }
+
+      #botons{
+        height: 50px;
+        width: 100%;
+        margin-top: 100px;
+        position:relative;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+
+      #playpause {
+        display: block;
+        margin: 0 auto;
+        position:absolute;
+        border:none;
+        text-decoration:none;
+        width: 100px;
+        height: 100px;
+        border: 0;
+        background: #4566AE;
+        border-radius: 50px;
+        cursor: pointer;
+        transform: translate(-50%,-50%);
+        top:70%;
+        left: 50%;
+
+      }
+
+      #bck{
+        height: 60px;
+        width: 60px;
+        background-image: url(img/previous.png);
+        margin-left: -200px;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top:70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+
+      #fwd{
+        height: 60px;
+        width: 60px;
+        background-image: url(img/next.png);
+        margin-left: 200px;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top:70%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      /* --------------- Tiradors ----------------- */
+
+      input[type=range] {
+        -webkit-appearance: none; /* Amaga el tirador per fer la màgia */
+        width: 97%; /* Firefox necessita una amplada específica */
+        background: transparent;  /* Amaga el tirador per fer la màgia */
+        background: rgba(255,255,255, 0.2);
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+      input[type=range]:focus {
+        outline: none; /* Per no veure el contorn */
+      }
+
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+        background: #4c4d4d;
+        border-radius: 10px;
+        border: 0px solid #010101;
+      }
+
+      /* Controlador */
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        background: rgba(255,255,255, 0.3);
+        cursor: pointer;
+
+        margin-top: -0.0px;
+
+        box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+        border: 0px solid #ff1e00;
+      }
+
+      /*  opcional  */
+      /*
+      input[type=range]:focus::-webkit-slider-runnable-track {
+        background: red;
+        border-radius: 10px;
+      }
+      */
+
+
+      /* --------------- Botons ----------------- */
+
+
+
+      #playpause:focus {
+        outline: none; /* Per no veure el contorn */
+      }
+      #playpause:before, #playpause:after, #playpause:focus:before, #playpause:focus:after {
+        position: absolute;
+        content: " ";
+        z-index: 1000;
+      }
+      #playpause:before, #playpause:after {
+        height: 47px;
+        width: 19px;
+        left: 29px;
+        top: 28px;
+        display: block;
+        background: white;
+      }
+
+      #playpause:after {
+       left: 54px;
+      }
+
+      #playpause:focus:before {
+        top: 28px;
+        left: 34px;
+        width: 0;
+        height: 0;
+        border-left: 47px solid white;
+        border-right: 24px solid transparent;
+        border-bottom: 24px solid transparent;
+        border-top: 24px solid transparent;
+        display: block;
+        background: transparent;
+      }
+
+      #playpause:focus:after {
+       visibility:hidden;
+      }
+
+
+}
+
+
+/* Versió Mòbils */
+
+@media only screen and (max-width: 959px){
+
+  body{
+        background-color: #1F1F1F;
+        margin:0;
+        top:0;
+        left: 0;
+        right: 0;
+        width: 375px;
+      }
+
+      #header{
+        height: 80px;
+        width: 100%;
+        background-color: #1C3460;
+        position: fixed;
+        float: left;
+      }
+
+      #header li{
+        display: inline-block;
+        text-decoration: none;
+        margin-top: -15px;
+      }
+
+      .main{
+        display: block;
+        margin: 0 auto;
+        height: 77px;
+        width: 77px;
+        float: right;
+      }
+
+      .minimize{
+        position: relative;
+        top: -20px;
+        left: -20px;
+        height: 20px;
+        width: 40px;
+        float: left;
+      }
+
+      #contenidor {
+        width: 90%;
+        float: left;
+        padding: 20px;
+        position: static;
+        margin-top: 80px;
+      }
+
+      #covers{
+        height: auto;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: block;
+      }
+
+      #cover {
+        width: 55%;
+        height: 30%;
+        display: block;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.4);
+        position: relative;
+        margin-top: 0;
+      }
+
+      .info {
+        width: 100%;
+        height: 80px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 0px;
+      }
+
+      .info h4{
+        text-align: center;
+        color: white;
+      }
+
+      .info h2{
+        margin-left: 00px;
+        text-align: center;
+        color: white;
+      }
+
+      ]
+
+      #carril{
+        margin-top: 200px;
+        height: 200px;
+        width: 100%;
+      }
+
+      #botons{
+        height: 120px;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+      }
+
+      #playpause {
+        display: block;
+        margin: 0 auto;
+        position:absolute;
+        border:none;
+        text-decoration:none;
+        width: 100px;
+        height: 100px;
+        border: 0;
+        background: #4566AE;
+        border-radius: 50px;
+        cursor: pointer;
+        top:8%;
+        left: 35%;
+      }
+
+      #bck{
+        height: 50px;
+        width: 50px;
+        background-image: url(img/previous.png);
+        margin-left: -200px;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top:50%;
+        left: 70%;
+        transform: translate(-50%,-50%);
+      }
+
+      #fwd{
+        height: 50px;
+        width: 50px;
+        background-image: url(img/next.png);
+        margin-left: 200px;
+        border: 0;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top:50%;
+        left: 26%;
+        transform: translate(-50%,-50%);
+      }
+
+      /* --------------- Tiradors ----------------- */
+
+      input[type=range] {
+        -webkit-appearance: none; /* Amaga el tirador per fer la màgia */
+        width: 97%; /* Firefox necessita una amplada específica */
+        background: transparent;  /* Amaga el tirador per fer la màgia */
+        background: rgba(255,255,255, 0.2);
+        border-radius: 10px;
+        margin: 20px auto;
+      }
+      input[type=range]:focus {
+        outline: none; /* Per no veure el contorn */
+      }
+
+      input[type=range]::-webkit-slider-runnable-track {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        /* box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; */
+        background: #4c4d4d;
+        border-radius: 10px;
+        border: 0px solid #010101;
+        left: 30%;
+      }
+
+      /* Controlador */
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 20px;
+        width: 20px;
+        border-radius: 10px;
+        background: rgba(255,255,255, 0.3);
+        cursor: pointer;
+
+        margin-top: -0.0px;
+
+        box-shadow: 0px 0px 1px #670000, 0px 0px 0px #810000;
+        border: 0px solid #ff1e00;
+
+      }
+
+      /* --------------- Botons ----------------- */
+
+      #playpause:focus {
+        outline: none; /* Per no veure el contorn */
+      }
+      #playpause:before, #playpause:after, #playpause:focus:before, #playpause:focus:after {
+        position: absolute;
+        content: " ";
+        z-index: 1000;
+      }
+      #playpause:before, #playpause:after {
+        height: 47px;
+        width: 19px;
+        left: 29px;
+        top: 28px;
+        display: block;
+        background: white;
+      }
+
+      #playpause:after {
+       left: 54px;
+      }
+
+      #playpause:focus:before {
+        top: 28px;
+        left: 34px;
+        width: 0;
+        height: 0;
+        border-left: 47px solid white;
+        border-right: 24px solid transparent;
+        border-bottom: 24px solid transparent;
+        border-top: 24px solid transparent;
+        display: block;
+        background: transparent;
+      }
+
+      #playpause:focus:after {
+       visibility:hidden;
+      }
+
+
+}
